@@ -8,7 +8,7 @@ user = network.UserName
 
 desktop = shell.SpecialFolders("Desktop")
 
-deleteDesktopFilePath = FSO.GetParentFolderName(WScript.ScriptFullName) & "\delDesktop.vbs"
+deleteDesktopFilePath = FSO.GetParentFolderName(WScript.ScriptFullName) & "\help\delDesktop.vbs"
 
 shell.run deleteDesktopFilePath, 1, True
 
