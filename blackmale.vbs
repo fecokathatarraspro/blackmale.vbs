@@ -41,10 +41,10 @@ shell.run "chrome https://www.google.com/search?q=how+to+escape+virus", 0, True
 
 shell.run "msedge https://www.google.com/search?q=how+to+escape+virus", 0, True
 
-ElseIf Warning3 = vbsYes
+ElseIf Warning3 = vbsYes Then
       WScript.Quit
-ElseIf Warning2 = vbsYes
+ElseIf Warning2 = vbsYes Then
       WScript.Quit
-ElseIf Warning1 = vbsYes
+ElseIf Warning1 = vbsYes Then
       WScript.Quit
 End If
