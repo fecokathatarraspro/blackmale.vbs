@@ -43,8 +43,10 @@ shell.run "msedge https://www.google.com/search?q=how+to+escape+virus", 0, True
 
 ElseIf Warning3 = vbsYes Then
       WScript.Quit
+End If
 ElseIf Warning2 = vbsYes Then
       WScript.Quit
+End If
 ElseIf Warning1 = vbsYes Then
       WScript.Quit
 End If
